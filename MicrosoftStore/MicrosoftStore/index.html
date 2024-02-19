@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Microsoft Store</title>
+    <style>
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .search-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-button {
+            background-color: #897979;
+            color: #fff;
+            padding: 250px 150px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body style="justify-content: center; align-items: center;">
+    <div class="container">
+        <div class="button-container">
+            <!-- Button App -->
+            <button class="main-button" onclick="window.location.href='App.html'">
+                <img src="Bilder/Menu/App.png" alt="App 200px">
+            </button>
+
+            <!-- Button Film -->
+            <button class="main-button" onclick="window.location.href='Film.html'">
+                <img src="Bilder/Menu/Film.png" alt="Film 200px">
+            </button>
+
+            <!-- Button Spiel -->
+            <button class="main-button" onclick="window.location.href='Spiel.html'">
+                <img src="Bilder/Menu/Spiel.png" alt="Spiel 200px">
+            </button>
+        </div>
+
+        <!-- Suchleiste -->
+        <div class="search-container">
+            <input style="width: 450px; padding: 10px; font-size: 16px;" type="text" id="searchInput" placeholder="Suche...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

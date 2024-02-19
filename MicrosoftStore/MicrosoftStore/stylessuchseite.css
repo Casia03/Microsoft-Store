@@ -1,0 +1,267 @@
+.app-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.app-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.app-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-details {
+  flex: 1;
+}
+
+.search-container {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hauptelemente {
+  position: relative;
+  margin-top: 70px;
+  height: auto;
+}
+
+.search-results {
+  position: relative;
+  width: 1130px;
+  left: 8%;
+  height: auto;
+  background-color: #4b4646;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.result-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sorting {
+  position: fixed;
+  float: left;
+  right: 30px;
+  top: 20px;
+  width: 300px;
+  height: 3%;
+  background-color: #4b4646;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+}
+
+.sorting h2 {
+  color: white;
+}
+
+#sortSelect {
+  color: white; 
+  background-color: transparent; 
+  font-size: 25px; 
+  border: none; 
+  outline: none; 
+}
+
+#sortSelect option {
+  color: white; 
+  background-color: black; 
+}
+
+.filters {
+  position: fixed;
+  float: right;
+  right: 30px;
+  top: 75px;
+  width: 300px;
+  height: 100%;
+  background-color: #4b4646;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+  font-size:  0.8em;
+}
+
+span{
+  color: white;
+}
+
+
+.filters h2 {
+  color: #fff;
+  font-size:  1.2em; 
+}
+
+.filters label {
+  color: #fff;
+}
+
+.filters hr {
+  border: 0.5px solid #ccc;
+  margin: 10px 0;
+}
+
+.filters checkbox {
+  visibility: none;
+}
+
+input[type="checkbox"] {
+  color: black;
+}
+
+input[type="checkbox"]:checked {
+  color: white;
+}
+
+::selection {
+  color: #fff;
+  background: #17A2B8;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.price-input .separator {
+  color: white;
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.year-range-input {
+  position: relative;
+}
+
+.year-range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: #5796c9;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: #5654da;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.year-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+
+.year-input .field {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+
+.year-input .separator {
+  color: white;
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylessuchseite.css">
+    <title>Suche</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <!-- Suchleiste -->
+    <div class="search-container">
+  <input style="width: 450px; padding: 10px; font-size: 16px;" type="text" id="searchInput" placeholder="Search..." class="searchInput">
+</div>
+
+
+    <div class="hauptelemente">
+
+        <!-- Vorgeschlagene sachen -->
+        <div class="search-results">
+
+            <h1>results</h1>
+
+        </div>
+
+        <div class="sorting">
+            <select id="sortSelect">
+                <option value="priceAsc">Preis aufsteigend</option>
+                <option value="priceDesc">Preis absteigend</option>
+                <option value="yearAsc">Jahr aufsteigend</option>
+                <option value="yearDesc">Jahr absteigend</option>
+                <option value="alphaAsc">Alphabetisch aufsteigend</option>
+                <option value="alphaDesc">Alphabetisch absteigend</option>
+            </select>
+        </div> 
+        
+        <div class="filters">
+
+            <h2>Genre</h2>
+
+            <input type="checkbox" id="Entertainment" name="tags">
+            <label for="entertainment">Entertainment</label><br>
+
+            <input type="checkbox" id="Simulation" name="tags">
+            <label for="simulation">Simulation</label><br>
+
+            <input type="checkbox" id="Musik" name="tags">
+            <label for="Musik">Musik</label><br>
+
+            <input type="checkbox" id="Action" name="tags">
+            <label for="Action">Action</label><br>
+
+            <input type="checkbox" id="Bildung" name="tags">
+            <label for="Bildung">Bildung</label><br>
+
+            <input type="checkbox" id="Abenteuer" name="tags">
+            <label for="Abenteuer">Abenteuer</label><br>
+
+            <input type="checkbox" id="Rollenspiel" name="tags">
+            <label for="Rollenspiel">Rollenspiel</label><br>
+
+            <input type="checkbox" id="Geschicklichkeit" name="tags">
+            <label for="Geschicklichkeit">Geschicklichkeit</label><br>
+
+            <input type="checkbox" id="Kampfspiel" name="tags">
+            <label for="Kampfspiel">Kampfspiel</label><br>
+
+            <input type="checkbox" id="Puzzle" name="tags">
+            <label for="Puzzle">Puzzle</label><br>
+
+            <input type="checkbox" id="Glücksspiel" name="tags">
+            <label for="Glücksspiel">Glücksspiel</label><br>
+
+            <input type="checkbox" id="Sport" name="tags">
+            <label for="Sport">Sport</label><br>
+
+            <input type="checkbox" id="Party" name="tags">
+            <label for="Party">Party</label><br>
+
+            <input type="checkbox" id="Tool" name="tags">
+            <label for="Tool">Tool</label><br>
+
+            <input type="checkbox" id="Thriller" name="tags">
+            <label for="Thriller">Thriller</label><br>
+
+            <input type="checkbox" id="Krimi" name="tags">
+            <label for="Krimi">Krimi</label><br>
+
+            <input type="checkbox" id="Drama" name="tags">
+            <label for="Drama">Drama</label><br>
+
+            <input type="checkbox" id="SciFi" name="tags">
+            <label for="SciFi">SciFi</label><br>
+
+            <input type="checkbox" id="Fantasy" name="tags">
+            <label for="Fantasy">Fantasy</label><br>
+
+            <input type="checkbox" id="Strategie" name="tags">
+            <label for="Strategie">Strategie</label><br>
+
+            <input type="checkbox" id="Klassiker" name="tags">
+            <label for="Klassiker">Klassiker</label><br>
+
+            <input type="checkbox" id="Ratespiele" name="tags">
+            <label for="Ratespiele">Ratespiele</label><br>
+
+            <input type="checkbox" id="Jump' n' Run" name="tags">
+            <label for="Jump' n' Run">Jump' n' Run</label><br>
+            
+            <hr>
+            <h2>Erscheinungsjahr</h2>
+                <div class="year-input">
+                    <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="2000" min="2000" max="2024">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="2024" min="2000" max="2024">
+                    </div>
+                </div>
+
+            <hr>
+            <h2>Preisspanne</h2>
+                <div class="price-input">
+                    <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="0" min="0" max="60">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="60" min="0" max="60">
+                    </div>
+                </div>
+
+
+            <hr>
+           
+        </div>
+
+
+    </div>
+
+    <div id="sidebar">
+        <button id="button1" onclick="window.location.href='index.html'">
+            <img src="Bilder/Menu/Home.png" alt="home button">
+        </button>
+        <button id="button2" onclick="window.location.href='App.html'">
+            <img src="Bilder/Menu/App.png" alt="Image 2">
+        </button>
+        <button id="button3" onclick="window.location.href='Spiel.html'">
+            <img src="Bilder/Menu/Spiel.png" alt="Image 3">
+        </button>
+        <button id="button4" onclick="window.location.href='Film.html'">
+            <img src="Bilder/Menu/Film.png" alt="Image 4">
+        </button>
+        <button id="button5">
+            <img src="Bilder/Menu/account.png" alt="account bild">
+        </button>
+    </div>
+
+
+</body>
+</html>
